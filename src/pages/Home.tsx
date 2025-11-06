@@ -124,7 +124,7 @@ const Home = () => {
                 <div className="inline-flex items-center justify-center w-12 h-12 rounded-full gradient-primary mb-4">
                   <stat.icon className="w-6 h-6 text-primary-foreground" />
                 </div>
-                <div className="text-3xl font-bold mb-2 text-gradient">{stat.value}</div>
+                <div className="text-3xl font-bold mb-2 text-primary">{stat.value}</div>
                 <div className="text-sm text-muted-foreground">{stat.label}</div>
               </div>
             ))}
