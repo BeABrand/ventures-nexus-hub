@@ -71,7 +71,7 @@ const Products = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center animate-fade-in-up">
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
-              Our <span className="text-gradient">Products</span>
+              Our <span className="text-primary">Products</span>
             </h1>
             <p className="text-xl text-muted-foreground">
               Explore our diverse portfolio of digital products designed to educate, 

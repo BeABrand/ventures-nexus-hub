@@ -73,7 +73,7 @@ const Home = () => {
           <div className="max-w-3xl animate-fade-in-up">
             <h1 className="text-5xl md:text-7xl font-bold mb-6 text-primary-foreground">
               Empowering Digital{" "}
-              <span className="text-gradient bg-gradient-to-r from-primary-glow to-gold bg-clip-text">
+              <span className="text-gold">
                 Creativity
               </span>
             </h1>
