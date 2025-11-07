@@ -94,13 +94,13 @@ const Blog = () => {
     "@type": "Blog",
     "name": "BSC Ventures Blog",
     "description": "Insights on digital products, education technology, and business innovation",
-    "url": "https://bscventures.co/blog",
+    "url": "https://bscventuresltd.com/blog",
     "publisher": {
       "@type": "Organization",
       "name": "BSC Ventures Limited",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://bscventures.co/logo.png"
+        "url": "https://bscventuresltd.com/logo.png"
       }
     }
   };
@@ -110,7 +110,7 @@ const Blog = () => {
       <SEO
         title="Blog - Insights & Resources"
         description="Read the latest articles on digital transformation, education technology, AI innovation, and business strategies from BSC Ventures."
-        canonical="https://bscventures.co/blog"
+        canonical="https://bscventuresltd.com/blog"
         keywords="digital business blog, education technology, AI insights, digital transformation, creative writing"
         structuredData={structuredData}
       />

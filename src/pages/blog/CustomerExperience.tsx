@@ -13,7 +13,7 @@ const CustomerExperience = () => {
     "@type": "BlogPosting",
     "headline": "Creating Exceptional Customer Experiences in the Digital Age",
     "description": "Learn how to design and deliver customer experiences that build loyalty and drive business success.",
-    "image": "https://bscventures.co/blog-customer-experience.jpg",
+    "image": "https://bscventuresltd.com/blog-customer-experience.jpg",
     "datePublished": "2024-10-15",
     "dateModified": "2024-10-15",
     "author": {
@@ -25,7 +25,7 @@ const CustomerExperience = () => {
       "name": "BSC Ventures Limited",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://bscventures.co/logo.png"
+        "url": "https://bscventuresltd.com/logo.png"
       }
     }
   };
@@ -35,7 +35,7 @@ const CustomerExperience = () => {
       <SEO
         title="Creating Exceptional Customer Experiences in the Digital Age"
         description="Learn how to design and deliver customer experiences that build loyalty and drive business success."
-        canonical="https://bscventures.co/blog/customer-experience"
+        canonical="https://bscventuresltd.com/blog/customer-experience"
         keywords="customer experience, CX design, customer satisfaction, user experience, customer loyalty"
         type="article"
         structuredData={structuredData}
@@ -121,7 +121,7 @@ const CustomerExperience = () => {
             <div className="mt-12 pt-8 border-t flex justify-center">
               <ShareButton 
                 title="Creating Exceptional Customer Experiences in the Digital Age"
-                url="https://bscventures.co/blog/customer-experience"
+                url="https://bscventuresltd.com/blog/customer-experience"
               />
             </div>
 

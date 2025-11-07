@@ -9,7 +9,7 @@ const TermsOfUse = () => {
       <SEO
         title="Terms of Use - BSC Ventures Limited"
         description="Review the Terms of Use for BSC Ventures Limited and all our products. Understand your rights and responsibilities when using our digital services."
-        canonical="https://bscventures.co/terms-of-use"
+        canonical="https://bscventuresltd.com/terms-of-use"
         keywords="terms of use, terms and conditions, user agreement, service terms, legal terms"
       />
       <Navbar />
@@ -160,7 +160,7 @@ const TermsOfUse = () => {
                 </p>
                 <p className="mt-4 font-semibold text-foreground">
                   BSC Ventures Limited<br />
-                  Email: info@bscventures.co
+                  Email: info@bscventuresltd.com
                 </p>
               </div>
             </div>

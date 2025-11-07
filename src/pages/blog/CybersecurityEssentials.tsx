@@ -13,7 +13,7 @@ const CybersecurityEssentials = () => {
     "@type": "BlogPosting",
     "headline": "Cybersecurity Essentials for Digital Businesses",
     "description": "Protect your digital assets and customer data with these essential cybersecurity practices for modern businesses.",
-    "image": "https://bscventures.co/blog-cybersecurity.jpg",
+    "image": "https://bscventuresltd.com/blog-cybersecurity.jpg",
     "datePublished": "2024-11-15",
     "dateModified": "2024-11-15",
     "author": {
@@ -25,7 +25,7 @@ const CybersecurityEssentials = () => {
       "name": "BSC Ventures Limited",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://bscventures.co/logo.png"
+        "url": "https://bscventuresltd.com/logo.png"
       }
     }
   };
@@ -35,7 +35,7 @@ const CybersecurityEssentials = () => {
       <SEO
         title="Cybersecurity Essentials for Digital Businesses"
         description="Protect your digital assets and customer data with these essential cybersecurity practices for modern businesses."
-        canonical="https://bscventures.co/blog/cybersecurity-essentials"
+        canonical="https://bscventuresltd.com/blog/cybersecurity-essentials"
         keywords="cybersecurity, data protection, digital security, business security, cyber threats"
         type="article"
         structuredData={structuredData}
@@ -121,7 +121,7 @@ const CybersecurityEssentials = () => {
             <div className="mt-12 pt-8 border-t flex justify-center">
               <ShareButton 
                 title="Cybersecurity Essentials for Digital Businesses"
-                url="https://bscventures.co/blog/cybersecurity-essentials"
+                url="https://bscventuresltd.com/blog/cybersecurity-essentials"
               />
             </div>
 

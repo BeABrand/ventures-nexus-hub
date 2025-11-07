@@ -13,7 +13,7 @@ const ProductivityTools = () => {
     "@type": "BlogPosting",
     "headline": "Top Productivity Tools for Modern Teams in 2024",
     "description": "Discover the essential productivity tools that help teams work smarter, collaborate better, and achieve more.",
-    "image": "https://bscventures.co/blog-productivity-tools.jpg",
+    "image": "https://bscventuresltd.com/blog-productivity-tools.jpg",
     "datePublished": "2024-08-28",
     "dateModified": "2024-08-28",
     "author": {
@@ -25,7 +25,7 @@ const ProductivityTools = () => {
       "name": "BSC Ventures Limited",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://bscventures.co/logo.png"
+        "url": "https://bscventuresltd.com/logo.png"
       }
     }
   };
@@ -35,7 +35,7 @@ const ProductivityTools = () => {
       <SEO
         title="Top Productivity Tools for Modern Teams in 2024"
         description="Discover the essential productivity tools that help teams work smarter, collaborate better, and achieve more."
-        canonical="https://bscventures.co/blog/productivity-tools"
+        canonical="https://bscventuresltd.com/blog/productivity-tools"
         keywords="productivity tools, team collaboration, project management, workflow optimization, business tools"
         type="article"
         structuredData={structuredData}
@@ -131,7 +131,7 @@ const ProductivityTools = () => {
             <div className="mt-12 pt-8 border-t flex justify-center">
               <ShareButton 
                 title="Top Productivity Tools for Modern Teams in 2024"
-                url="https://bscventures.co/blog/productivity-tools"
+                url="https://bscventuresltd.com/blog/productivity-tools"
               />
             </div>
 

@@ -13,7 +13,7 @@ interface SEOProps {
 const SEO = ({
   title,
   description,
-  canonical = "https://bscventures.co",
+  canonical = "https://bscventuresltd.com",
   ogImage = "https://lovable.dev/opengraph-image-p98pqg.png",
   keywords = "digital products, education, creative writing, graphic design, AI learning, photography, BSC Ventures",
   type = "website",

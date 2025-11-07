@@ -13,7 +13,7 @@ const ContentMarketing = () => {
     "@type": "BlogPosting",
     "headline": "Content Marketing Strategies for Digital Success",
     "description": "Learn how to create compelling content that drives engagement and builds lasting relationships with your audience.",
-    "image": "https://bscventures.co/blog-content-marketing.jpg",
+    "image": "https://bscventuresltd.com/blog-content-marketing.jpg",
     "datePublished": "2024-11-25",
     "dateModified": "2024-11-25",
     "author": {
@@ -25,7 +25,7 @@ const ContentMarketing = () => {
       "name": "BSC Ventures Limited",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://bscventures.co/logo.png"
+        "url": "https://bscventuresltd.com/logo.png"
       }
     }
   };
@@ -35,7 +35,7 @@ const ContentMarketing = () => {
       <SEO
         title="Content Marketing Strategies for Digital Success"
         description="Learn how to create compelling content that drives engagement and builds lasting relationships with your audience."
-        canonical="https://bscventures.co/blog/content-marketing"
+        canonical="https://bscventuresltd.com/blog/content-marketing"
         keywords="content marketing, digital marketing, SEO content, audience engagement, brand storytelling"
         type="article"
         structuredData={structuredData}
@@ -116,7 +116,7 @@ const ContentMarketing = () => {
             <div className="mt-12 pt-8 border-t flex justify-center">
               <ShareButton 
                 title="Content Marketing Strategies for Digital Success"
-                url="https://bscventures.co/blog/content-marketing"
+                url="https://bscventuresltd.com/blog/content-marketing"
               />
             </div>
 

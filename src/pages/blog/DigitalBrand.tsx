@@ -13,7 +13,7 @@ const DigitalBrand = () => {
     "@type": "BlogPosting",
     "headline": "Building a Successful Digital Brand: Lessons from BSC Ventures",
     "description": "Learn the key strategies and insights we've gathered from managing multiple successful digital brands across various industries.",
-    "image": "https://bscventures.co/blog-digital-brand.jpg",
+    "image": "https://bscventuresltd.com/blog-digital-brand.jpg",
     "datePublished": "2025-01-05",
     "dateModified": "2025-01-05",
     "author": {
@@ -25,7 +25,7 @@ const DigitalBrand = () => {
       "name": "BSC Ventures Limited",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://bscventures.co/logo.png"
+        "url": "https://bscventuresltd.com/logo.png"
       }
     }
   };
@@ -35,7 +35,7 @@ const DigitalBrand = () => {
       <SEO
         title="Building a Successful Digital Brand: Lessons from BSC Ventures"
         description="Learn the key strategies and insights we've gathered from managing multiple successful digital brands across various industries."
-        canonical="https://bscventures.co/blog/building-successful-digital-brand"
+        canonical="https://bscventuresltd.com/blog/building-successful-digital-brand"
         keywords="digital branding, brand strategy, business growth, multi-brand management, brand building"
         type="article"
         structuredData={structuredData}
@@ -193,7 +193,7 @@ const DigitalBrand = () => {
             <div className="mt-12 pt-8 border-t flex justify-center">
               <ShareButton 
                 title="Building a Successful Digital Brand: Lessons from BSC Ventures"
-                url="https://bscventures.co/blog/building-successful-digital-brand"
+                url="https://bscventuresltd.com/blog/building-successful-digital-brand"
               />
             </div>
 

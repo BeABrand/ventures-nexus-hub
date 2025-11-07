@@ -13,7 +13,7 @@ const SocialMediaStrategy = () => {
     "@type": "BlogPosting",
     "headline": "Building an Effective Social Media Strategy in 2024",
     "description": "Master the art of social media marketing with proven strategies for engagement, growth, and brand building.",
-    "image": "https://bscventures.co/blog-social-media.jpg",
+    "image": "https://bscventuresltd.com/blog-social-media.jpg",
     "datePublished": "2024-11-05",
     "dateModified": "2024-11-05",
     "author": {
@@ -25,7 +25,7 @@ const SocialMediaStrategy = () => {
       "name": "BSC Ventures Limited",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://bscventures.co/logo.png"
+        "url": "https://bscventuresltd.com/logo.png"
       }
     }
   };
@@ -35,7 +35,7 @@ const SocialMediaStrategy = () => {
       <SEO
         title="Building an Effective Social Media Strategy in 2024"
         description="Master the art of social media marketing with proven strategies for engagement, growth, and brand building."
-        canonical="https://bscventures.co/blog/social-media-strategy"
+        canonical="https://bscventuresltd.com/blog/social-media-strategy"
         keywords="social media marketing, social strategy, brand engagement, social media growth, digital presence"
         type="article"
         structuredData={structuredData}
@@ -121,7 +121,7 @@ const SocialMediaStrategy = () => {
             <div className="mt-12 pt-8 border-t flex justify-center">
               <ShareButton 
                 title="Building an Effective Social Media Strategy in 2024"
-                url="https://bscventures.co/blog/social-media-strategy"
+                url="https://bscventuresltd.com/blog/social-media-strategy"
               />
             </div>
 

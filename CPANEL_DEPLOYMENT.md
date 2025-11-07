@@ -100,12 +100,12 @@ To set permissions:
 
 After deployment, verify:
 
-- [ ] Homepage loads: `https://yourdomain.com`
+- [ ] Homepage loads: `https://bscventuresltd.com`
 - [ ] Navigation works (no 404 errors)
-- [ ] Blog posts accessible: `https://yourdomain.com/blog`
+- [ ] Blog posts accessible: `https://bscventuresltd.com/blog`
 - [ ] Individual articles load correctly
-- [ ] robots.txt accessible: `https://yourdomain.com/robots.txt`
-- [ ] sitemap.xml accessible: `https://yourdomain.com/sitemap.xml`
+- [ ] robots.txt accessible: `https://bscventuresltd.com/robots.txt`
+- [ ] sitemap.xml accessible: `https://bscventuresltd.com/sitemap.xml`
 - [ ] HTTPS redirect works (HTTP → HTTPS)
 - [ ] Browser back/forward buttons work
 - [ ] Direct URL access works for all routes
@@ -161,10 +161,10 @@ After deployment, verify:
 After deployment, update these files with your actual domain:
 
 ### public/sitemap.xml
-Replace all instances of `https://bscventures.co` with your domain
+Replace all instances of `https://bscventuresltd.com` with your domain
 
 ### public/robots.txt
-Replace `Sitemap: https://bscventures.co/sitemap.xml` with your domain
+Replace `Sitemap: https://bscventuresltd.com/sitemap.xml` with your domain
 
 ### src/components/SEO.tsx
 Update the default canonical URL

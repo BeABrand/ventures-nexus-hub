@@ -13,7 +13,7 @@ const SaaSMetrics = () => {
     "@type": "BlogPosting",
     "headline": "Essential SaaS Metrics Every Founder Should Track",
     "description": "Learn which metrics matter most for SaaS businesses and how to use them to drive growth and profitability.",
-    "image": "https://bscventures.co/blog-saas-metrics.jpg",
+    "image": "https://bscventuresltd.com/blog-saas-metrics.jpg",
     "datePublished": "2024-09-10",
     "dateModified": "2024-09-10",
     "author": {
@@ -25,7 +25,7 @@ const SaaSMetrics = () => {
       "name": "BSC Ventures Limited",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://bscventures.co/logo.png"
+        "url": "https://bscventuresltd.com/logo.png"
       }
     }
   };
@@ -35,7 +35,7 @@ const SaaSMetrics = () => {
       <SEO
         title="Essential SaaS Metrics Every Founder Should Track"
         description="Learn which metrics matter most for SaaS businesses and how to use them to drive growth and profitability."
-        canonical="https://bscventures.co/blog/saas-metrics"
+        canonical="https://bscventuresltd.com/blog/saas-metrics"
         keywords="SaaS metrics, business analytics, KPIs, SaaS growth, subscription metrics, MRR, churn rate"
         type="article"
         structuredData={structuredData}
@@ -138,7 +138,7 @@ const SaaSMetrics = () => {
             <div className="mt-12 pt-8 border-t flex justify-center">
               <ShareButton 
                 title="Essential SaaS Metrics Every Founder Should Track"
-                url="https://bscventures.co/blog/saas-metrics"
+                url="https://bscventuresltd.com/blog/saas-metrics"
               />
             </div>
 

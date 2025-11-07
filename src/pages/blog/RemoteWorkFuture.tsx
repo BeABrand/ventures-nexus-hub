@@ -13,7 +13,7 @@ const RemoteWorkFuture = () => {
     "@type": "BlogPosting",
     "headline": "The Future of Remote Work and Digital Collaboration",
     "description": "Exploring how digital tools and platforms are reshaping the future of work and enabling global collaboration.",
-    "image": "https://bscventures.co/blog-remote-work.jpg",
+    "image": "https://bscventuresltd.com/blog-remote-work.jpg",
     "datePublished": "2024-12-20",
     "dateModified": "2024-12-20",
     "author": {
@@ -25,7 +25,7 @@ const RemoteWorkFuture = () => {
       "name": "BSC Ventures Limited",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://bscventures.co/logo.png"
+        "url": "https://bscventuresltd.com/logo.png"
       }
     }
   };
@@ -35,7 +35,7 @@ const RemoteWorkFuture = () => {
       <SEO
         title="The Future of Remote Work and Digital Collaboration"
         description="Exploring how digital tools and platforms are reshaping the future of work and enabling global collaboration."
-        canonical="https://bscventures.co/blog/remote-work-future"
+        canonical="https://bscventuresltd.com/blog/remote-work-future"
         keywords="remote work, digital collaboration, future of work, productivity tools, virtual teams"
         type="article"
         structuredData={structuredData}
@@ -116,7 +116,7 @@ const RemoteWorkFuture = () => {
             <div className="mt-12 pt-8 border-t flex justify-center">
               <ShareButton 
                 title="The Future of Remote Work and Digital Collaboration"
-                url="https://bscventures.co/blog/remote-work-future"
+                url="https://bscventuresltd.com/blog/remote-work-future"
               />
             </div>
 

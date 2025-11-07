@@ -75,8 +75,8 @@ try {
    • Homepage loads correctly
    • Navigation works (no 404 errors)
    • Blog posts are accessible
-   • robots.txt is accessible: yourdomain.com/robots.txt
-   • sitemap.xml is accessible: yourdomain.com/sitemap.xml
+   • robots.txt is accessible: bscventuresltd.com/robots.txt
+   • sitemap.xml is accessible: bscventuresltd.com/sitemap.xml
 
 ⚠️  Important Notes:
    • Make sure Apache mod_rewrite is enabled
@@ -84,7 +84,7 @@ try {
    • Clear browser cache if changes don't appear
    • Update sitemap.xml URLs to match your domain
 
-🌐 Your site will be live at: https://bscventures.co
+🌐 Your site will be live at: https://bscventuresltd.com
 `;
 
   console.log(deploymentGuide);

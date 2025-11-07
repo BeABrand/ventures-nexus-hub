@@ -103,7 +103,7 @@ const Footer = () => {
               </a>
             </div>
             <p className="text-xs text-muted-foreground mt-4">
-              Email: <a href="mailto:info@bscventures.co" className="hover:text-primary transition-colors">info@bscventures.co</a>
+              Email: <a href="mailto:info@bscventuresltd.com" className="hover:text-primary transition-colors">info@bscventuresltd.com</a>
             </p>
           </div>
         </div>

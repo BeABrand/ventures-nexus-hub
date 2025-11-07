@@ -80,7 +80,7 @@ const Products = () => {
       <SEO
         title="Our Products - Digital Solutions for Education, Design & Technology"
         description="Explore BSC Ventures' portfolio: CustomWriting.help, GEDGuru, BirdieWriters, VectorPulseGraphix, StudyAssistant.ai, and ElChemistPhotography. Discover our diverse digital products."
-        canonical="https://bscventures.co/products"
+        canonical="https://bscventuresltd.com/products"
         keywords="digital products, custom writing, GED tutoring, freelance writing, graphic design, AI study tools, photography services"
         structuredData={productsSchema}
       />

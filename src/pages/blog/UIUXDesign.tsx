@@ -13,7 +13,7 @@ const UIUXDesign = () => {
     "@type": "BlogPosting",
     "headline": "UI/UX Design Principles for Modern Digital Products",
     "description": "Master the essential design principles that create intuitive, engaging, and successful digital products.",
-    "image": "https://bscventures.co/blog-uiux-design.jpg",
+    "image": "https://bscventuresltd.com/blog-uiux-design.jpg",
     "datePublished": "2024-09-22",
     "dateModified": "2024-09-22",
     "author": {
@@ -25,7 +25,7 @@ const UIUXDesign = () => {
       "name": "BSC Ventures Limited",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://bscventures.co/logo.png"
+        "url": "https://bscventuresltd.com/logo.png"
       }
     }
   };
@@ -35,7 +35,7 @@ const UIUXDesign = () => {
       <SEO
         title="UI/UX Design Principles for Modern Digital Products"
         description="Master the essential design principles that create intuitive, engaging, and successful digital products."
-        canonical="https://bscventures.co/blog/uiux-design"
+        canonical="https://bscventuresltd.com/blog/uiux-design"
         keywords="UI design, UX design, user interface, user experience, product design, design principles"
         type="article"
         structuredData={structuredData}
@@ -138,7 +138,7 @@ const UIUXDesign = () => {
             <div className="mt-12 pt-8 border-t flex justify-center">
               <ShareButton 
                 title="UI/UX Design Principles for Modern Digital Products"
-                url="https://bscventures.co/blog/uiux-design"
+                url="https://bscventuresltd.com/blog/uiux-design"
               />
             </div>
 

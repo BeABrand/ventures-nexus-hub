@@ -18,7 +18,7 @@ const NotFound = () => {
       <SEO
         title="404 Page Not Found - BSC Ventures Limited"
         description="The page you're looking for doesn't exist. Return to BSC Ventures Limited homepage to explore our digital products and services."
-        canonical="https://bscventures.co/404"
+        canonical="https://bscventuresltd.com/404"
       />
       <Navbar />
       

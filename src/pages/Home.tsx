@@ -57,7 +57,7 @@ const Home = () => {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "BSC Ventures Limited",
-    "url": "https://bscventures.co",
+    "url": "https://bscventuresltd.com",
     "logo": "https://lovable.dev/opengraph-image-p98pqg.png",
     "description": "BSC Ventures Limited manages a suite of creative, educational, AI, and photography products. Discover our brands: CustomWriting.help, GEDGuru, BirdieWriters, VectorPulseGraphix, StudyAssistant.ai, and ElChemistPhotography.",
     "sameAs": [
@@ -70,7 +70,7 @@ const Home = () => {
     ],
     "contactPoint": {
       "@type": "ContactPoint",
-      "email": "info@bscventures.co",
+      "email": "info@bscventuresltd.com",
       "contactType": "Customer Service"
     }
   };
@@ -80,7 +80,7 @@ const Home = () => {
       <SEO
         title="BSC Ventures Limited - Empowering Digital Creativity & Innovation"
         description="BSC Ventures Limited manages a suite of creative, educational, AI, and photography products. Discover our brands: CustomWriting.help, GEDGuru, BirdieWriters, VectorPulseGraphix, StudyAssistant.ai, and ElChemistPhotography."
-        canonical="https://bscventures.co"
+        canonical="https://bscventuresltd.com"
         structuredData={organizationSchema}
       />
       <Navbar />
