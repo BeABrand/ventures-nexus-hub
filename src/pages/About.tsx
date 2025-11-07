@@ -17,7 +17,7 @@ const About = () => {
       <SEO
         title="About BSC Ventures Limited - Our Mission, Vision & Story"
         description="Learn about BSC Ventures Limited - a diversified digital company managing creative, educational, AI, and photography products. Discover our mission to merge innovation, education, and artistry."
-        canonical="https://bscventures.co/about"
+        canonical="https://bscventuresltd.com/about"
         keywords="BSC Ventures, about us, company mission, digital innovation, educational technology, creative services"
       />
       <Navbar />

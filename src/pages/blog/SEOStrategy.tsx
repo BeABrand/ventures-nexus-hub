@@ -13,7 +13,7 @@ const SEOStrategy = () => {
     "@type": "BlogPosting",
     "headline": "SEO Strategy Guide: Ranking Higher in 2024",
     "description": "Learn proven SEO strategies to improve your search rankings, drive organic traffic, and grow your online presence.",
-    "image": "https://bscventures.co/blog-seo-strategy.jpg",
+    "image": "https://bscventuresltd.com/blog-seo-strategy.jpg",
     "datePublished": "2024-08-15",
     "dateModified": "2024-08-15",
     "author": {
@@ -25,7 +25,7 @@ const SEOStrategy = () => {
       "name": "BSC Ventures Limited",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://bscventures.co/logo.png"
+        "url": "https://bscventuresltd.com/logo.png"
       }
     }
   };
@@ -35,7 +35,7 @@ const SEOStrategy = () => {
       <SEO
         title="SEO Strategy Guide: Ranking Higher in 2024"
         description="Learn proven SEO strategies to improve your search rankings, drive organic traffic, and grow your online presence."
-        canonical="https://bscventures.co/blog/seo-strategy"
+        canonical="https://bscventuresltd.com/blog/seo-strategy"
         keywords="SEO strategy, search engine optimization, organic traffic, search rankings, SEO tips, digital marketing"
         type="article"
         structuredData={structuredData}
@@ -138,7 +138,7 @@ const SEOStrategy = () => {
             <div className="mt-12 pt-8 border-t flex justify-center">
               <ShareButton 
                 title="SEO Strategy Guide: Ranking Higher in 2024"
-                url="https://bscventures.co/blog/seo-strategy"
+                url="https://bscventuresltd.com/blog/seo-strategy"
               />
             </div>
 

@@ -13,7 +13,7 @@ const AIEducation = () => {
     "@type": "BlogPosting",
     "headline": "How AI is Revolutionizing Education and Learning",
     "description": "Explore the transformative impact of artificial intelligence on educational platforms and personalized learning experiences.",
-    "image": "https://bscventures.co/blog-ai-education.jpg",
+    "image": "https://bscventuresltd.com/blog-ai-education.jpg",
     "datePublished": "2025-01-10",
     "dateModified": "2025-01-10",
     "author": {
@@ -25,7 +25,7 @@ const AIEducation = () => {
       "name": "BSC Ventures Limited",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://bscventures.co/logo.png"
+        "url": "https://bscventuresltd.com/logo.png"
       }
     }
   };
@@ -35,7 +35,7 @@ const AIEducation = () => {
       <SEO
         title="How AI is Revolutionizing Education and Learning"
         description="Explore the transformative impact of artificial intelligence on educational platforms and personalized learning experiences."
-        canonical="https://bscventures.co/blog/ai-education-revolution"
+        canonical="https://bscventuresltd.com/blog/ai-education-revolution"
         keywords="AI education, personalized learning, educational technology, artificial intelligence, online learning"
         type="article"
         structuredData={structuredData}
@@ -153,7 +153,7 @@ const AIEducation = () => {
             <div className="mt-12 pt-8 border-t flex justify-center">
               <ShareButton 
                 title="How AI is Revolutionizing Education and Learning"
-                url="https://bscventures.co/blog/ai-education-revolution"
+                url="https://bscventuresltd.com/blog/ai-education-revolution"
               />
             </div>
 

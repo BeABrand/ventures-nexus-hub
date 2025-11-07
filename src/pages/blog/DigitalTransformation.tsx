@@ -13,7 +13,7 @@ const DigitalTransformation = () => {
     "@type": "BlogPosting",
     "headline": "The Complete Guide to Digital Transformation in 2025",
     "description": "Discover how businesses are leveraging digital products and AI-powered solutions to stay competitive in the modern marketplace.",
-    "image": "https://bscventures.co/blog-digital-transformation.jpg",
+    "image": "https://bscventuresltd.com/blog-digital-transformation.jpg",
     "datePublished": "2025-01-15",
     "dateModified": "2025-01-15",
     "author": {
@@ -25,7 +25,7 @@ const DigitalTransformation = () => {
       "name": "BSC Ventures Limited",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://bscventures.co/logo.png"
+        "url": "https://bscventuresltd.com/logo.png"
       }
     }
   };
@@ -35,7 +35,7 @@ const DigitalTransformation = () => {
       <SEO
         title="The Complete Guide to Digital Transformation in 2025"
         description="Discover how businesses are leveraging digital products and AI-powered solutions to stay competitive in the modern marketplace."
-        canonical="https://bscventures.co/blog/digital-transformation-guide"
+        canonical="https://bscventuresltd.com/blog/digital-transformation-guide"
         keywords="digital transformation, business innovation, AI solutions, digital products, modern business"
         type="article"
         structuredData={structuredData}
@@ -134,7 +134,7 @@ const DigitalTransformation = () => {
             <div className="mt-12 pt-8 border-t flex justify-center">
               <ShareButton 
                 title="The Complete Guide to Digital Transformation in 2025"
-                url="https://bscventures.co/blog/digital-transformation-guide"
+                url="https://bscventuresltd.com/blog/digital-transformation-guide"
               />
             </div>
 

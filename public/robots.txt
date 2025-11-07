@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Sitemaps
-Sitemap: https://bscventures.co/sitemap.xml
+Sitemap: https://bscventuresltd.com/sitemap.xml
 
 # Crawl-delay
 Crawl-delay: 1

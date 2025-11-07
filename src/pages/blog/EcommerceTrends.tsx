@@ -13,7 +13,7 @@ const EcommerceTrends = () => {
     "@type": "BlogPosting",
     "headline": "E-commerce Trends Shaping Online Retail in 2024",
     "description": "Discover the latest trends transforming e-commerce and how businesses can adapt to changing consumer behaviors.",
-    "image": "https://bscventures.co/blog-ecommerce.jpg",
+    "image": "https://bscventuresltd.com/blog-ecommerce.jpg",
     "datePublished": "2024-12-10",
     "dateModified": "2024-12-10",
     "author": {
@@ -25,7 +25,7 @@ const EcommerceTrends = () => {
       "name": "BSC Ventures Limited",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://bscventures.co/logo.png"
+        "url": "https://bscventuresltd.com/logo.png"
       }
     }
   };
@@ -35,7 +35,7 @@ const EcommerceTrends = () => {
       <SEO
         title="E-commerce Trends Shaping Online Retail in 2024"
         description="Discover the latest trends transforming e-commerce and how businesses can adapt to changing consumer behaviors."
-        canonical="https://bscventures.co/blog/ecommerce-trends"
+        canonical="https://bscventuresltd.com/blog/ecommerce-trends"
         keywords="e-commerce, online retail, shopping trends, digital commerce, consumer behavior"
         type="article"
         structuredData={structuredData}
@@ -116,7 +116,7 @@ const EcommerceTrends = () => {
             <div className="mt-12 pt-8 border-t flex justify-center">
               <ShareButton 
                 title="E-commerce Trends Shaping Online Retail in 2024"
-                url="https://bscventures.co/blog/ecommerce-trends"
+                url="https://bscventuresltd.com/blog/ecommerce-trends"
               />
             </div>
 

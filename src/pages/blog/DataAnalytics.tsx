@@ -13,7 +13,7 @@ const DataAnalytics = () => {
     "@type": "BlogPosting",
     "headline": "Leveraging Data Analytics for Business Growth",
     "description": "Discover how data-driven decision making can transform your business strategy and drive sustainable growth.",
-    "image": "https://bscventures.co/blog-data-analytics.jpg",
+    "image": "https://bscventuresltd.com/blog-data-analytics.jpg",
     "datePublished": "2024-10-28",
     "dateModified": "2024-10-28",
     "author": {
@@ -25,7 +25,7 @@ const DataAnalytics = () => {
       "name": "BSC Ventures Limited",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://bscventures.co/logo.png"
+        "url": "https://bscventuresltd.com/logo.png"
       }
     }
   };
@@ -35,7 +35,7 @@ const DataAnalytics = () => {
       <SEO
         title="Leveraging Data Analytics for Business Growth"
         description="Discover how data-driven decision making can transform your business strategy and drive sustainable growth."
-        canonical="https://bscventures.co/blog/data-analytics"
+        canonical="https://bscventuresltd.com/blog/data-analytics"
         keywords="data analytics, business intelligence, data-driven decisions, analytics strategy, business growth"
         type="article"
         structuredData={structuredData}
@@ -121,7 +121,7 @@ const DataAnalytics = () => {
             <div className="mt-12 pt-8 border-t flex justify-center">
               <ShareButton 
                 title="Leveraging Data Analytics for Business Growth"
-                url="https://bscventures.co/blog/data-analytics"
+                url="https://bscventuresltd.com/blog/data-analytics"
               />
             </div>
 

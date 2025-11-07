@@ -13,7 +13,7 @@ const StartupGrowth = () => {
     "@type": "BlogPosting",
     "headline": "Scaling Your Startup: From MVP to Market Leader",
     "description": "Essential strategies and lessons learned from scaling digital startups from initial concept to market success.",
-    "image": "https://bscventures.co/blog-startup-growth.jpg",
+    "image": "https://bscventuresltd.com/blog-startup-growth.jpg",
     "datePublished": "2024-10-05",
     "dateModified": "2024-10-05",
     "author": {
@@ -25,7 +25,7 @@ const StartupGrowth = () => {
       "name": "BSC Ventures Limited",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://bscventures.co/logo.png"
+        "url": "https://bscventuresltd.com/logo.png"
       }
     }
   };
@@ -35,7 +35,7 @@ const StartupGrowth = () => {
       <SEO
         title="Scaling Your Startup: From MVP to Market Leader"
         description="Essential strategies and lessons learned from scaling digital startups from initial concept to market success."
-        canonical="https://bscventures.co/blog/startup-growth"
+        canonical="https://bscventuresltd.com/blog/startup-growth"
         keywords="startup scaling, business growth, MVP development, startup strategy, entrepreneurship"
         type="article"
         structuredData={structuredData}
@@ -128,7 +128,7 @@ const StartupGrowth = () => {
             <div className="mt-12 pt-8 border-t flex justify-center">
               <ShareButton 
                 title="Scaling Your Startup: From MVP to Market Leader"
-                url="https://bscventures.co/blog/startup-growth"
+                url="https://bscventuresltd.com/blog/startup-growth"
               />
             </div>
 

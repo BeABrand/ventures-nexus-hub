@@ -11,7 +11,7 @@ const Copyright = () => {
       <SEO
         title="Copyright Notice - BSC Ventures Limited"
         description="BSC Ventures Limited copyright information. Learn about our intellectual property rights, trademarks, and how to properly use our branded content."
-        canonical="https://bscventures.co/copyright"
+        canonical="https://bscventuresltd.com/copyright"
         keywords="copyright, intellectual property, trademarks, brand protection, licensing"
       />
       <Navbar />
@@ -175,7 +175,7 @@ const Copyright = () => {
                 <p className="mt-4 font-semibold text-foreground">
                   BSC Ventures Limited<br />
                   Copyright Agent<br />
-                  Email: info@bscventures.co<br />
+                  Email: info@bscventuresltd.com<br />
                   Subject: Copyright Inquiry
                 </p>
               </div>

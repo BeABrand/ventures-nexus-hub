@@ -13,7 +13,7 @@ const CreativeWriting = () => {
     "@type": "BlogPosting",
     "headline": "The Future of Creative Writing in the Digital Age",
     "description": "Examining how digital platforms are empowering writers and creating new opportunities in the creative writing industry.",
-    "image": "https://bscventures.co/blog-creative-writing.jpg",
+    "image": "https://bscventuresltd.com/blog-creative-writing.jpg",
     "datePublished": "2024-12-28",
     "dateModified": "2024-12-28",
     "author": {
@@ -25,7 +25,7 @@ const CreativeWriting = () => {
       "name": "BSC Ventures Limited",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://bscventures.co/logo.png"
+        "url": "https://bscventuresltd.com/logo.png"
       }
     }
   };
@@ -35,7 +35,7 @@ const CreativeWriting = () => {
       <SEO
         title="The Future of Creative Writing in the Digital Age"
         description="Examining how digital platforms are empowering writers and creating new opportunities in the creative writing industry."
-        canonical="https://bscventures.co/blog/future-of-creative-writing"
+        canonical="https://bscventuresltd.com/blog/future-of-creative-writing"
         keywords="creative writing, digital writing platforms, freelance writing, content creation, writing opportunities"
         type="article"
         structuredData={structuredData}
@@ -203,7 +203,7 @@ const CreativeWriting = () => {
             <div className="mt-12 pt-8 border-t flex justify-center">
               <ShareButton 
                 title="The Future of Creative Writing in the Digital Age"
-                url="https://bscventures.co/blog/future-of-creative-writing"
+                url="https://bscventuresltd.com/blog/future-of-creative-writing"
               />
             </div>
 

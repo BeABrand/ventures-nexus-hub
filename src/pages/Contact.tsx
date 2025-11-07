@@ -32,7 +32,7 @@ const Contact = () => {
       <SEO
         title="Contact BSC Ventures Limited - Get In Touch"
         description="Contact BSC Ventures Limited for business inquiries, partnerships, or questions about our products. We serve clients worldwide and respond within 24 hours."
-        canonical="https://bscventures.co/contact"
+        canonical="https://bscventuresltd.com/contact"
         keywords="contact BSC Ventures, business inquiry, partnership, customer support, get in touch"
       />
       <Navbar />
@@ -146,7 +146,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold mb-1">Email Us</h3>
-                    <p className="text-muted-foreground">info@bscventures.co</p>
+                    <p className="text-muted-foreground">info@bscventuresltd.com</p>
                     <p className="text-sm text-muted-foreground mt-1">
                       We'll respond within 24 hours
                     </p>

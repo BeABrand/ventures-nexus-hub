@@ -9,7 +9,7 @@ const PrivacyPolicy = () => {
       <SEO
         title="Privacy Policy - BSC Ventures Limited"
         description="Read BSC Ventures Limited's Privacy Policy. Learn how we collect, use, and protect your personal information across our digital products and services."
-        canonical="https://bscventures.co/privacy-policy"
+        canonical="https://bscventuresltd.com/privacy-policy"
         keywords="privacy policy, data protection, personal information, GDPR, privacy rights"
       />
       <Navbar />
@@ -142,7 +142,7 @@ const PrivacyPolicy = () => {
                 </p>
                 <p className="mt-4 font-semibold text-foreground">
                   BSC Ventures Limited<br />
-                  Email: info@bscventures.co
+                  Email: info@bscventuresltd.com
                 </p>
               </div>
             </div>
