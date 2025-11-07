@@ -189,11 +189,11 @@ const DigitalBrand = () => {
               </p>
             </div>
 
-            <div className="mt-12 pt-8 border-t">
-              <Button variant="outline" className="group">
-                <Share2 className="mr-2 w-4 h-4" />
-                Share Article
-              </Button>
+            <div className="mt-12 pt-8 border-t flex justify-center">
+              <ShareButton 
+                title="Building a Successful Digital Brand: Lessons from BSC Ventures"
+                url="https://bscventures.co/blog/building-successful-digital-brand"
+              />
             </div>
           </div>
         </article>

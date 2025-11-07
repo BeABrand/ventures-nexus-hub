@@ -1,12 +1,16 @@
 import { Link } from "react-router-dom";
-import { Calendar, Clock, ArrowRight } from "lucide-react";
+import { Calendar, Clock, ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
+import { useState } from "react";
 
 const Blog = () => {
+  const [currentPage, setCurrentPage] = useState(1);
+  const postsPerPage = 4;
+
   const blogPosts = [
     { id: "digital-transformation-guide", title: "The Complete Guide to Digital Transformation in 2025", excerpt: "Discover how businesses are leveraging digital products and AI-powered solutions to stay competitive in the modern marketplace.", date: "2025-01-15", readTime: "8 min read", category: "Digital Strategy", image: "🚀" },
     { id: "ai-education-revolution", title: "How AI is Revolutionizing Education and Learning", excerpt: "Explore the transformative impact of artificial intelligence on educational platforms and personalized learning experiences.", date: "2025-01-10", readTime: "6 min read", category: "Education", image: "🎓" },
@@ -25,6 +29,12 @@ const Blog = () => {
     { id: "productivity-tools", title: "Top Productivity Tools for Modern Teams in 2024", excerpt: "Discover the essential productivity tools that help teams work smarter, collaborate better, and achieve more.", date: "2024-08-28", readTime: "7 min read", category: "Productivity", image: "⚡" },
     { id: "seo-strategy", title: "SEO Strategy Guide: Ranking Higher in 2024", excerpt: "Learn proven SEO strategies to improve your search rankings, drive organic traffic, and grow your online presence.", date: "2024-08-15", readTime: "10 min read", category: "SEO", image: "🔍" },
   ];
+
+  // Calculate pagination
+  const indexOfLastPost = currentPage * postsPerPage;
+  const indexOfFirstPost = indexOfLastPost - postsPerPage;
+  const currentPosts = blogPosts.slice(indexOfFirstPost, indexOfLastPost);
+  const totalPages = Math.ceil(blogPosts.length / postsPerPage);
 
   const structuredData = {
     "@context": "https://schema.org",
@@ -73,7 +83,7 @@ const Blog = () => {
           <section className="py-20">
             <div className="container mx-auto px-4">
               <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-                {blogPosts.map((post) => (
+                {currentPosts.map((post) => (
                   <Card key={post.id} className="hover-lift shadow-elegant">
                     <CardHeader>
                       <div className="flex items-center gap-2 text-sm text-muted-foreground mb-3">
@@ -110,6 +120,42 @@ const Blog = () => {
                   </Card>
                 ))}
               </div>
+
+              {/* Pagination */}
+              {totalPages > 1 && (
+                <div className="flex justify-center items-center gap-4 mt-12">
+                  <Button
+                    variant="outline"
+                    size="icon"
+                    onClick={() => setCurrentPage(prev => Math.max(prev - 1, 1))}
+                    disabled={currentPage === 1}
+                  >
+                    <ChevronLeft className="w-4 h-4" />
+                  </Button>
+                  
+                  <div className="flex items-center gap-2">
+                    {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
+                      <Button
+                        key={page}
+                        variant={currentPage === page ? "default" : "outline"}
+                        size="icon"
+                        onClick={() => setCurrentPage(page)}
+                      >
+                        {page}
+                      </Button>
+                    ))}
+                  </div>
+
+                  <Button
+                    variant="outline"
+                    size="icon"
+                    onClick={() => setCurrentPage(prev => Math.min(prev + 1, totalPages))}
+                    disabled={currentPage === totalPages}
+                  >
+                    <ChevronRight className="w-4 h-4" />
+                  </Button>
+                </div>
+              )}
             </div>
           </section>
         </main>

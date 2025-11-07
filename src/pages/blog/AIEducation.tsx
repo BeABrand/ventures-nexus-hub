@@ -149,11 +149,11 @@ const AIEducation = () => {
               </p>
             </div>
 
-            <div className="mt-12 pt-8 border-t">
-              <Button variant="outline" className="group">
-                <Share2 className="mr-2 w-4 h-4" />
-                Share Article
-              </Button>
+            <div className="mt-12 pt-8 border-t flex justify-center">
+              <ShareButton 
+                title="How AI is Revolutionizing Education and Learning"
+                url="https://bscventures.co/blog/ai-education-revolution"
+              />
             </div>
           </div>
         </article>
