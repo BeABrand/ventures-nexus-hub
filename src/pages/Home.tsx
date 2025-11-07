@@ -4,6 +4,7 @@ import ProductCard from "@/components/ProductCard";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
+import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-bg.jpg";
 
 const Home = () => {
@@ -111,13 +112,17 @@ const Home = () => {
               Building digital products that educate, inspire, and empower creativity across education, technology, and design.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button variant="hero" size="lg" className="group">
-                Explore Our Brands
-                <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </Button>
-              <Button variant="outline" size="lg" className="bg-background/10 backdrop-blur-sm border-primary-foreground/20 text-primary-foreground hover:bg-background/20">
-                Contact Us
-              </Button>
+              <Link to="/products">
+                <Button variant="hero" size="lg" className="group">
+                  Explore Our Brands
+                  <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                </Button>
+              </Link>
+              <Link to="/contact">
+                <Button variant="outline" size="lg" className="bg-background/10 backdrop-blur-sm border-primary-foreground/20 text-primary-foreground hover:bg-background/20">
+                  Contact Us
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
@@ -199,12 +204,16 @@ const Home = () => {
                 or want to join our team, we'd love to hear from you.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button variant="hero" size="lg">
-                  Partner With Us
-                </Button>
-                <Button variant="outline" size="lg">
-                  View Opportunities
-                </Button>
+                <Link to="/partnership">
+                  <Button variant="hero" size="lg">
+                    Partner With Us
+                  </Button>
+                </Link>
+                <Link to="/careers">
+                  <Button variant="outline" size="lg">
+                    View Opportunities
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>

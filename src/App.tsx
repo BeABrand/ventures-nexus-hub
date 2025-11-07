@@ -8,6 +8,8 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Products from "./pages/Products";
 import Contact from "./pages/Contact";
+import Partnership from "./pages/Partnership";
+import Careers from "./pages/Careers";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfUse from "./pages/TermsOfUse";
 import Copyright from "./pages/Copyright";
@@ -47,6 +49,8 @@ const App = () => (
             <Route path="/about" element={<About />} />
             <Route path="/products" element={<Products />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/partnership" element={<Partnership />} />
+            <Route path="/careers" element={<Careers />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/digital-transformation-guide" element={<DigitalTransformation />} />
             <Route path="/blog/ai-education-revolution" element={<AIEducation />} />
