@@ -1,10 +1,17 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 import { Shield } from "lucide-react";
 
 const PrivacyPolicy = () => {
   return (
     <div className="min-h-screen">
+      <SEO
+        title="Privacy Policy - BSC Ventures Limited"
+        description="Read BSC Ventures Limited's Privacy Policy. Learn how we collect, use, and protect your personal information across our digital products and services."
+        canonical="https://bscventures.co/privacy-policy"
+        keywords="privacy policy, data protection, personal information, GDPR, privacy rights"
+      />
       <Navbar />
 
       {/* Hero Section */}

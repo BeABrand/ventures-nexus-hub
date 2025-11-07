@@ -1,14 +1,28 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://bscventures.co/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1
+
+# Disallow search parameters
+Disallow: /*?*sort=
+Disallow: /*?*filter=
+
+# Allow important bots
 User-agent: Googlebot
 Allow: /
 
 User-agent: Bingbot
 Allow: /
 
-User-agent: Twitterbot
+User-agent: Slurp
 Allow: /
 
-User-agent: facebookexternalhit
+User-agent: DuckDuckBot
 Allow: /
 
-User-agent: *
+User-agent: Baiduspider
 Allow: /

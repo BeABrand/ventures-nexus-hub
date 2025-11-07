@@ -1,10 +1,17 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 import { FileText } from "lucide-react";
 
 const TermsOfUse = () => {
   return (
     <div className="min-h-screen">
+      <SEO
+        title="Terms of Use - BSC Ventures Limited"
+        description="Review the Terms of Use for BSC Ventures Limited and all our products. Understand your rights and responsibilities when using our digital services."
+        canonical="https://bscventures.co/terms-of-use"
+        keywords="terms of use, terms and conditions, user agreement, service terms, legal terms"
+      />
       <Navbar />
 
       {/* Hero Section */}

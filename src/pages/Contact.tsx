@@ -7,6 +7,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { useToast } from "@/hooks/use-toast";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 
 const Contact = () => {
   const { toast } = useToast();
@@ -28,10 +29,16 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen">
+      <SEO
+        title="Contact BSC Ventures Limited - Get In Touch"
+        description="Contact BSC Ventures Limited for business inquiries, partnerships, or questions about our products. We serve clients worldwide and respond within 24 hours."
+        canonical="https://bscventures.co/contact"
+        keywords="contact BSC Ventures, business inquiry, partnership, customer support, get in touch"
+      />
       <Navbar />
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20 bg-gradient-to-b from-secondary/50 to-background">
+      <header className="pt-32 pb-20 bg-gradient-to-b from-secondary/50 to-background">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center animate-fade-in-up">
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
@@ -42,7 +49,7 @@ const Contact = () => {
             </p>
           </div>
         </div>
-      </section>
+      </header>
 
       {/* Contact Section */}
       <section className="py-20">

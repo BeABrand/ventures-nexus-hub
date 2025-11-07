@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 import { Copyright as CopyrightIcon } from "lucide-react";
 
 const Copyright = () => {
@@ -7,6 +8,12 @@ const Copyright = () => {
 
   return (
     <div className="min-h-screen">
+      <SEO
+        title="Copyright Notice - BSC Ventures Limited"
+        description="BSC Ventures Limited copyright information. Learn about our intellectual property rights, trademarks, and how to properly use our branded content."
+        canonical="https://bscventures.co/copyright"
+        keywords="copyright, intellectual property, trademarks, brand protection, licensing"
+      />
       <Navbar />
 
       {/* Hero Section */}

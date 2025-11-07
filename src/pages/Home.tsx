@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import ProductCard from "@/components/ProductCard";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 import heroImage from "@/assets/hero-bg.jpg";
 
 const Home = () => {
@@ -52,18 +53,47 @@ const Home = () => {
     { icon: TrendingUp, value: "99%", label: "Satisfaction Rate" },
   ];
 
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "BSC Ventures Limited",
+    "url": "https://bscventures.co",
+    "logo": "https://lovable.dev/opengraph-image-p98pqg.png",
+    "description": "BSC Ventures Limited manages a suite of creative, educational, AI, and photography products. Discover our brands: CustomWriting.help, GEDGuru, BirdieWriters, VectorPulseGraphix, StudyAssistant.ai, and ElChemistPhotography.",
+    "sameAs": [
+      "https://customwriting.help",
+      "https://gedguru.com",
+      "https://birdiewriters.com",
+      "https://vectorpulsegraphix.com",
+      "https://studyassistant.ai",
+      "https://instagram.com/elchemistphotography"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "info@bscventures.co",
+      "contactType": "Customer Service"
+    }
+  };
+
   return (
     <div className="min-h-screen">
+      <SEO
+        title="BSC Ventures Limited - Empowering Digital Creativity & Innovation"
+        description="BSC Ventures Limited manages a suite of creative, educational, AI, and photography products. Discover our brands: CustomWriting.help, GEDGuru, BirdieWriters, VectorPulseGraphix, StudyAssistant.ai, and ElChemistPhotography."
+        canonical="https://bscventures.co"
+        structuredData={organizationSchema}
+      />
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
+      <header className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 z-0">
           <img
             src={heroImage}
-            alt="Modern office workspace"
+            alt="Modern office workspace showcasing BSC Ventures Limited digital innovation and creativity"
             className="w-full h-full object-cover"
+            loading="eager"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-navy/95 via-navy/80 to-transparent" />
         </div>
@@ -98,7 +128,7 @@ const Home = () => {
             <div className="w-1 h-3 bg-primary-foreground/50 rounded-full" />
           </div>
         </div>
-      </section>
+      </header>
 
       {/* About Section */}
       <section className="py-20 bg-background">

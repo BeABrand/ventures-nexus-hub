@@ -1,6 +1,7 @@
 import ProductCard from "@/components/ProductCard";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 import { BookOpen, GraduationCap, Feather, Palette, Brain, Camera } from "lucide-react";
 
 const Products = () => {
@@ -62,12 +63,31 @@ const Products = () => {
     { name: "Technology", count: 1, color: "from-green-500 to-teal-600" },
   ];
 
+  const productsSchema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "itemListElement": products.map((product, index) => ({
+      "@type": "ListItem",
+      "position": index + 1,
+      "name": product.name,
+      "description": product.description,
+      "url": product.url
+    }))
+  };
+
   return (
     <div className="min-h-screen">
+      <SEO
+        title="Our Products - Digital Solutions for Education, Design & Technology"
+        description="Explore BSC Ventures' portfolio: CustomWriting.help, GEDGuru, BirdieWriters, VectorPulseGraphix, StudyAssistant.ai, and ElChemistPhotography. Discover our diverse digital products."
+        canonical="https://bscventures.co/products"
+        keywords="digital products, custom writing, GED tutoring, freelance writing, graphic design, AI study tools, photography services"
+        structuredData={productsSchema}
+      />
       <Navbar />
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20 bg-gradient-to-b from-secondary/50 to-background">
+      <header className="pt-32 pb-20 bg-gradient-to-b from-secondary/50 to-background">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center animate-fade-in-up">
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
@@ -79,7 +99,7 @@ const Products = () => {
             </p>
           </div>
         </div>
-      </section>
+      </header>
 
       {/* Categories Overview */}
       <section className="py-12">

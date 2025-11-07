@@ -1,6 +1,7 @@
 import { Target, Eye, Clock } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 
 const About = () => {
   const timeline = [
@@ -13,10 +14,16 @@ const About = () => {
 
   return (
     <div className="min-h-screen">
+      <SEO
+        title="About BSC Ventures Limited - Our Mission, Vision & Story"
+        description="Learn about BSC Ventures Limited - a diversified digital company managing creative, educational, AI, and photography products. Discover our mission to merge innovation, education, and artistry."
+        canonical="https://bscventures.co/about"
+        keywords="BSC Ventures, about us, company mission, digital innovation, educational technology, creative services"
+      />
       <Navbar />
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20 bg-gradient-to-b from-secondary/50 to-background">
+      <header className="pt-32 pb-20 bg-gradient-to-b from-secondary/50 to-background">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center animate-fade-in-up">
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
@@ -28,7 +35,7 @@ const About = () => {
             </p>
           </div>
         </div>
-      </section>
+      </header>
 
       {/* Mission & Vision */}
       <section className="py-20">

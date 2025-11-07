@@ -5,7 +5,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-card border-t border-border mt-20">
+    <footer className="bg-card border-t border-border mt-20" role="contentinfo">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand Section */}
@@ -75,26 +75,35 @@ const Footer = () => {
             <h3 className="font-semibold mb-4">Follow Us</h3>
             <div className="flex space-x-4">
               <a
-                href="#"
+                href="https://linkedin.com/company/bsc-ventures"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Follow BSC Ventures on LinkedIn"
                 className="w-10 h-10 rounded-full bg-secondary hover:bg-primary hover:text-primary-foreground transition-all flex items-center justify-center"
               >
                 <Linkedin size={20} />
               </a>
               <a
-                href="#"
+                href="https://instagram.com/bscventures"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Follow BSC Ventures on Instagram"
                 className="w-10 h-10 rounded-full bg-secondary hover:bg-primary hover:text-primary-foreground transition-all flex items-center justify-center"
               >
                 <Instagram size={20} />
               </a>
               <a
-                href="#"
+                href="https://twitter.com/bscventures"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Follow BSC Ventures on Twitter"
                 className="w-10 h-10 rounded-full bg-secondary hover:bg-primary hover:text-primary-foreground transition-all flex items-center justify-center"
               >
                 <Twitter size={20} />
               </a>
             </div>
             <p className="text-xs text-muted-foreground mt-4">
-              Email: info@bscventures.co
+              Email: <a href="mailto:info@bscventures.co" className="hover:text-primary transition-colors">info@bscventures.co</a>
             </p>
           </div>
         </div>

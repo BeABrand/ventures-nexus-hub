@@ -14,13 +14,13 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border" role="navigation" aria-label="Main navigation">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2">
+          <Link to="/" className="flex items-center space-x-2" aria-label="BSC Ventures Limited Home">
             <div className="w-10 h-10 gradient-primary rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-xl">BSC</span>
+              <span className="text-primary-foreground font-bold text-xl" aria-hidden="true">BSC</span>
             </div>
             <span className="font-bold text-xl hidden sm:inline">BSC Ventures</span>
           </Link>
