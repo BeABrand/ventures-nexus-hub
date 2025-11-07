@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "build:dev": "vite build --mode development",
-    "build:cpanel": "node build-cpanel.js",
+    "build:cpanel": "node build-cpanel.cjs",
     "lint": "eslint .",
     "preview": "vite preview"
   },
