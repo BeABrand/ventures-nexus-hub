@@ -1,0 +1,38 @@
+
+╔════════════════════════════════════════════════════════════════╗
+║           cPanel Deployment - Ready to Upload! 🎉             ║
+╚════════════════════════════════════════════════════════════════╝
+
+📁 Build Location: ./dist
+
+📤 Upload Instructions:
+   1. Log in to your cPanel account
+   2. Open "File Manager"
+   3. Navigate to public_html (or your domain's root directory)
+   4. Delete all existing files in the directory (BACKUP FIRST!)
+   5. Upload ALL contents from the 'dist' folder
+   6. Ensure .htaccess file is uploaded (enable "Show Hidden Files")
+   7. Set proper permissions (644 for files, 755 for directories)
+
+✅ Included Files:
+   • index.html (main entry point)
+   • .htaccess (URL rewriting & security)
+   • robots.txt (SEO crawler instructions)
+   • sitemap.xml (SEO site structure)
+   • All compiled assets (JS, CSS, images)
+
+🔍 Verification:
+   After upload, visit your domain and check:
+   • Homepage loads correctly
+   • Navigation works (no 404 errors)
+   • Blog posts are accessible
+   • robots.txt is accessible: bscventuresltd.com/robots.txt
+   • sitemap.xml is accessible: bscventuresltd.com/sitemap.xml
+
+⚠️  Important Notes:
+   • Make sure Apache mod_rewrite is enabled
+   • If routes don't work, check .htaccess is uploaded
+   • Clear browser cache if changes don't appear
+   • Update sitemap.xml URLs to match your domain
+
+🌐 Your site will be live at: https://bscventuresltd.com
