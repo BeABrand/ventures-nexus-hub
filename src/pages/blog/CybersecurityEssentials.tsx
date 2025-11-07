@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
 import ShareButton from "@/components/ShareButton";
+import RelatedArticles from "@/components/RelatedArticles";
 
 const CybersecurityEssentials = () => {
   const structuredData = {
@@ -123,6 +124,11 @@ const CybersecurityEssentials = () => {
                 url="https://bscventures.co/blog/cybersecurity-essentials"
               />
             </div>
+
+            <RelatedArticles 
+              currentArticleId="cybersecurity-essentials"
+              category="Security"
+            />
           </div>
         </article>
 

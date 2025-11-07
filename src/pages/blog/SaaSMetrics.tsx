@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
 import ShareButton from "@/components/ShareButton";
+import RelatedArticles from "@/components/RelatedArticles";
 
 const SaaSMetrics = () => {
   const structuredData = {
@@ -140,6 +141,11 @@ const SaaSMetrics = () => {
                 url="https://bscventures.co/blog/saas-metrics"
               />
             </div>
+
+            <RelatedArticles 
+              currentArticleId="saas-metrics"
+              category="SaaS Business"
+            />
           </div>
         </article>
 

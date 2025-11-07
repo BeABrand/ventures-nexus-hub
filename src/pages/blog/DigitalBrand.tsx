@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
 import ShareButton from "@/components/ShareButton";
+import RelatedArticles from "@/components/RelatedArticles";
 
 const DigitalBrand = () => {
   const structuredData = {
@@ -195,6 +196,11 @@ const DigitalBrand = () => {
                 url="https://bscventures.co/blog/building-successful-digital-brand"
               />
             </div>
+
+            <RelatedArticles 
+              currentArticleId="building-successful-digital-brand"
+              category="Branding"
+            />
           </div>
         </article>
 

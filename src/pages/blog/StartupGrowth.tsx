@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
 import ShareButton from "@/components/ShareButton";
+import RelatedArticles from "@/components/RelatedArticles";
 
 const StartupGrowth = () => {
   const structuredData = {
@@ -130,6 +131,11 @@ const StartupGrowth = () => {
                 url="https://bscventures.co/blog/startup-growth"
               />
             </div>
+
+            <RelatedArticles 
+              currentArticleId="startup-growth"
+              category="Entrepreneurship"
+            />
           </div>
         </article>
 

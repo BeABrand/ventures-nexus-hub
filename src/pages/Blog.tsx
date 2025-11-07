@@ -1,14 +1,18 @@
 import { Link } from "react-router-dom";
-import { Calendar, Clock, ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
+import { Calendar, Clock, ArrowRight, ChevronLeft, ChevronRight, Search, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Badge } from "@/components/ui/badge";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
-import { useState } from "react";
+import { useState, useMemo } from "react";
 
 const Blog = () => {
   const [currentPage, setCurrentPage] = useState(1);
+  const [searchQuery, setSearchQuery] = useState("");
+  const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
   const postsPerPage = 4;
 
   const blogPosts = [
@@ -30,11 +34,60 @@ const Blog = () => {
     { id: "seo-strategy", title: "SEO Strategy Guide: Ranking Higher in 2024", excerpt: "Learn proven SEO strategies to improve your search rankings, drive organic traffic, and grow your online presence.", date: "2024-08-15", readTime: "10 min read", category: "SEO", image: "🔍" },
   ];
 
-  // Calculate pagination
+  // Get unique categories
+  const categories = useMemo(() => {
+    const cats = Array.from(new Set(blogPosts.map(post => post.category)));
+    return cats.sort();
+  }, []);
+
+  // Filter posts based on search and category
+  const filteredPosts = useMemo(() => {
+    let filtered = blogPosts;
+
+    // Filter by search query
+    if (searchQuery) {
+      const query = searchQuery.toLowerCase();
+      filtered = filtered.filter(post =>
+        post.title.toLowerCase().includes(query) ||
+        post.excerpt.toLowerCase().includes(query) ||
+        post.category.toLowerCase().includes(query)
+      );
+    }
+
+    // Filter by category
+    if (selectedCategory) {
+      filtered = filtered.filter(post => post.category === selectedCategory);
+    }
+
+    return filtered;
+  }, [searchQuery, selectedCategory]);
+
+  // Calculate pagination based on filtered posts
   const indexOfLastPost = currentPage * postsPerPage;
   const indexOfFirstPost = indexOfLastPost - postsPerPage;
-  const currentPosts = blogPosts.slice(indexOfFirstPost, indexOfLastPost);
-  const totalPages = Math.ceil(blogPosts.length / postsPerPage);
+  const currentPosts = filteredPosts.slice(indexOfFirstPost, indexOfLastPost);
+  const totalPages = Math.ceil(filteredPosts.length / postsPerPage);
+
+  // Reset to page 1 when filters change
+  const handleSearchChange = (value: string) => {
+    setSearchQuery(value);
+    setCurrentPage(1);
+  };
+
+  const handleCategoryClick = (category: string) => {
+    if (selectedCategory === category) {
+      setSelectedCategory(null);
+    } else {
+      setSelectedCategory(category);
+    }
+    setCurrentPage(1);
+  };
+
+  const clearFilters = () => {
+    setSearchQuery("");
+    setSelectedCategory(null);
+    setCurrentPage(1);
+  };
 
   const structuredData = {
     "@context": "https://schema.org",
@@ -72,17 +125,79 @@ const Blog = () => {
                 <h1 className="text-4xl md:text-5xl font-bold text-primary-foreground mb-6">
                   Insights & Resources
                 </h1>
-                <p className="text-lg text-primary-foreground/90">
+                <p className="text-lg text-primary-foreground/90 mb-8">
                   Stay updated with the latest trends in digital products, education technology, and business innovation
                 </p>
+                
+                {/* Search Bar */}
+                <div className="relative max-w-xl mx-auto">
+                  <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-muted-foreground" />
+                  <Input
+                    type="text"
+                    placeholder="Search articles..."
+                    value={searchQuery}
+                    onChange={(e) => handleSearchChange(e.target.value)}
+                    className="pl-10 pr-10 h-12 text-base bg-background"
+                  />
+                  {searchQuery && (
+                    <button
+                      onClick={() => handleSearchChange("")}
+                      className="absolute right-3 top-1/2 -translate-y-1/2 text-muted-foreground hover:text-foreground"
+                    >
+                      <X className="w-5 h-5" />
+                    </button>
+                  )}
+                </div>
               </div>
             </div>
           </header>
 
+          {/* Category Filters */}
+          <section className="py-8 border-b">
+            <div className="container mx-auto px-4">
+              <div className="max-w-6xl mx-auto">
+                <div className="flex flex-wrap items-center gap-2">
+                  <span className="text-sm font-medium text-muted-foreground mr-2">Filter by:</span>
+                  {categories.map((category) => (
+                    <Badge
+                      key={category}
+                      variant={selectedCategory === category ? "default" : "outline"}
+                      className="cursor-pointer hover:bg-primary hover:text-primary-foreground transition-colors"
+                      onClick={() => handleCategoryClick(category)}
+                    >
+                      {category}
+                    </Badge>
+                  ))}
+                  {(searchQuery || selectedCategory) && (
+                    <Button
+                      variant="ghost"
+                      size="sm"
+                      onClick={clearFilters}
+                      className="ml-2"
+                    >
+                      <X className="w-4 h-4 mr-1" />
+                      Clear Filters
+                    </Button>
+                  )}
+                </div>
+              </div>
+            </div>
+          </section>
+
           {/* Blog Posts Grid */}
           <section className="py-20">
             <div className="container mx-auto px-4">
-              <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+              {/* Results count */}
+              <div className="max-w-6xl mx-auto mb-6">
+                <p className="text-sm text-muted-foreground">
+                  Showing {currentPosts.length} of {filteredPosts.length} article{filteredPosts.length !== 1 ? 's' : ''}
+                  {(searchQuery || selectedCategory) && ' matching your filters'}
+                </p>
+              </div>
+
+              {currentPosts.length > 0 ? (
+                <>
+                  <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
                 {currentPosts.map((post) => (
                   <Card key={post.id} className="hover-lift shadow-elegant">
                     <CardHeader>
@@ -121,38 +236,49 @@ const Blog = () => {
                 ))}
               </div>
 
-              {/* Pagination */}
-              {totalPages > 1 && (
-                <div className="flex justify-center items-center gap-4 mt-12">
-                  <Button
-                    variant="outline"
-                    size="icon"
-                    onClick={() => setCurrentPage(prev => Math.max(prev - 1, 1))}
-                    disabled={currentPage === 1}
-                  >
-                    <ChevronLeft className="w-4 h-4" />
-                  </Button>
-                  
-                  <div className="flex items-center gap-2">
-                    {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
+                  {/* Pagination */}
+                  {totalPages > 1 && (
+                    <div className="flex justify-center items-center gap-4 mt-12">
                       <Button
-                        key={page}
-                        variant={currentPage === page ? "default" : "outline"}
+                        variant="outline"
                         size="icon"
-                        onClick={() => setCurrentPage(page)}
+                        onClick={() => setCurrentPage(prev => Math.max(prev - 1, 1))}
+                        disabled={currentPage === 1}
                       >
-                        {page}
+                        <ChevronLeft className="w-4 h-4" />
                       </Button>
-                    ))}
-                  </div>
+                      
+                      <div className="flex items-center gap-2">
+                        {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
+                          <Button
+                            key={page}
+                            variant={currentPage === page ? "default" : "outline"}
+                            size="icon"
+                            onClick={() => setCurrentPage(page)}
+                          >
+                            {page}
+                          </Button>
+                        ))}
+                      </div>
 
-                  <Button
-                    variant="outline"
-                    size="icon"
-                    onClick={() => setCurrentPage(prev => Math.min(prev + 1, totalPages))}
-                    disabled={currentPage === totalPages}
-                  >
-                    <ChevronRight className="w-4 h-4" />
+                      <Button
+                        variant="outline"
+                        size="icon"
+                        onClick={() => setCurrentPage(prev => Math.min(prev + 1, totalPages))}
+                        disabled={currentPage === totalPages}
+                      >
+                        <ChevronRight className="w-4 h-4" />
+                      </Button>
+                    </div>
+                  )}
+                </>
+              ) : (
+                <div className="max-w-6xl mx-auto text-center py-12">
+                  <p className="text-lg text-muted-foreground mb-4">
+                    No articles found matching your criteria.
+                  </p>
+                  <Button onClick={clearFilters} variant="outline">
+                    Clear Filters
                   </Button>
                 </div>
               )}

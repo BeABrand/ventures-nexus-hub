@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
 import ShareButton from "@/components/ShareButton";
+import RelatedArticles from "@/components/RelatedArticles";
 
 const RemoteWorkFuture = () => {
   const structuredData = {
@@ -118,6 +119,11 @@ const RemoteWorkFuture = () => {
                 url="https://bscventures.co/blog/remote-work-future"
               />
             </div>
+
+            <RelatedArticles 
+              currentArticleId="remote-work-future"
+              category="Business Strategy"
+            />
           </div>
         </article>
 

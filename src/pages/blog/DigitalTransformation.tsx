@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
 import ShareButton from "@/components/ShareButton";
+import RelatedArticles from "@/components/RelatedArticles";
 
 const DigitalTransformation = () => {
   const structuredData = {
@@ -136,6 +137,11 @@ const DigitalTransformation = () => {
                 url="https://bscventures.co/blog/digital-transformation-guide"
               />
             </div>
+
+            <RelatedArticles 
+              currentArticleId="digital-transformation-guide"
+              category="Digital Strategy"
+            />
           </div>
         </article>
 

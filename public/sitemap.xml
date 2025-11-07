@@ -2,25 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://bscventures.co/</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2025-01-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://bscventures.co/about</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2025-01-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bscventures.co/products</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2025-01-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://bscventures.co/contact</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2025-01-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -30,45 +30,119 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+  <!-- Blog Articles -->
   <url>
     <loc>https://bscventures.co/blog/digital-transformation-guide</loc>
     <lastmod>2025-01-15</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://bscventures.co/blog/ai-education-revolution</loc>
     <lastmod>2025-01-10</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://bscventures.co/blog/building-successful-digital-brand</loc>
     <lastmod>2025-01-05</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://bscventures.co/blog/future-of-creative-writing</loc>
     <lastmod>2024-12-28</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://bscventures.co/blog/remote-work-future</loc>
+    <lastmod>2024-12-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bscventures.co/blog/ecommerce-trends</loc>
+    <lastmod>2024-12-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bscventures.co/blog/content-marketing</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bscventures.co/blog/cybersecurity-essentials</loc>
+    <lastmod>2024-11-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bscventures.co/blog/social-media-strategy</loc>
+    <lastmod>2024-11-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bscventures.co/blog/data-analytics</loc>
+    <lastmod>2024-10-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bscventures.co/blog/customer-experience</loc>
+    <lastmod>2024-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bscventures.co/blog/startup-growth</loc>
+    <lastmod>2024-10-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bscventures.co/blog/uiux-design</loc>
+    <lastmod>2024-09-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bscventures.co/blog/saas-metrics</loc>
+    <lastmod>2024-09-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bscventures.co/blog/productivity-tools</loc>
+    <lastmod>2024-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bscventures.co/blog/seo-strategy</loc>
+    <lastmod>2024-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- Legal Pages -->
+  <url>
     <loc>https://bscventures.co/privacy-policy</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2025-01-15</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://bscventures.co/terms-of-use</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2025-01-15</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://bscventures.co/copyright</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2025-01-15</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>

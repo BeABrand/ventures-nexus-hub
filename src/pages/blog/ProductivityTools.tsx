@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
 import ShareButton from "@/components/ShareButton";
+import RelatedArticles from "@/components/RelatedArticles";
 
 const ProductivityTools = () => {
   const structuredData = {
@@ -133,6 +134,11 @@ const ProductivityTools = () => {
                 url="https://bscventures.co/blog/productivity-tools"
               />
             </div>
+
+            <RelatedArticles 
+              currentArticleId="productivity-tools"
+              category="Productivity"
+            />
           </div>
         </article>
 

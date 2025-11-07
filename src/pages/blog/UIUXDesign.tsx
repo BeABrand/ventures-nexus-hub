@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
 import ShareButton from "@/components/ShareButton";
+import RelatedArticles from "@/components/RelatedArticles";
 
 const UIUXDesign = () => {
   const structuredData = {
@@ -140,6 +141,11 @@ const UIUXDesign = () => {
                 url="https://bscventures.co/blog/uiux-design"
               />
             </div>
+
+            <RelatedArticles 
+              currentArticleId="uiux-design"
+              category="Design"
+            />
           </div>
         </article>
 

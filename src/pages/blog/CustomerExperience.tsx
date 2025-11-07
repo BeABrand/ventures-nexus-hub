@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
 import ShareButton from "@/components/ShareButton";
+import RelatedArticles from "@/components/RelatedArticles";
 
 const CustomerExperience = () => {
   const structuredData = {
@@ -123,6 +124,11 @@ const CustomerExperience = () => {
                 url="https://bscventures.co/blog/customer-experience"
               />
             </div>
+
+            <RelatedArticles 
+              currentArticleId="customer-experience"
+              category="Customer Success"
+            />
           </div>
         </article>
 

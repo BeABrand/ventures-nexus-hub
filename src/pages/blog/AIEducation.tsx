@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
 import ShareButton from "@/components/ShareButton";
+import RelatedArticles from "@/components/RelatedArticles";
 
 const AIEducation = () => {
   const structuredData = {
@@ -155,6 +156,11 @@ const AIEducation = () => {
                 url="https://bscventures.co/blog/ai-education-revolution"
               />
             </div>
+
+            <RelatedArticles 
+              currentArticleId="ai-education-revolution"
+              category="Education"
+            />
           </div>
         </article>
 

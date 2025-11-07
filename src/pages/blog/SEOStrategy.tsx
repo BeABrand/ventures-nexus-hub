@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
 import ShareButton from "@/components/ShareButton";
+import RelatedArticles from "@/components/RelatedArticles";
 
 const SEOStrategy = () => {
   const structuredData = {
@@ -140,6 +141,11 @@ const SEOStrategy = () => {
                 url="https://bscventures.co/blog/seo-strategy"
               />
             </div>
+
+            <RelatedArticles 
+              currentArticleId="seo-strategy"
+              category="SEO"
+            />
           </div>
         </article>
 

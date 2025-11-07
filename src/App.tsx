@@ -12,6 +12,7 @@ import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfUse from "./pages/TermsOfUse";
 import Copyright from "./pages/Copyright";
 import NotFound from "./pages/NotFound";
+import LoadingScreen from "./components/LoadingScreen";
 
 // Lazy load blog pages for better performance
 const Blog = lazy(() => import("./pages/Blog"));
@@ -40,7 +41,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
-        <Suspense fallback={<div className="min-h-screen flex items-center justify-center">Loading...</div>}>
+        <Suspense fallback={<LoadingScreen />}>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />

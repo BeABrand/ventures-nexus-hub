@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
 import ShareButton from "@/components/ShareButton";
+import RelatedArticles from "@/components/RelatedArticles";
 
 const EcommerceTrends = () => {
   const structuredData = {
@@ -118,6 +119,11 @@ const EcommerceTrends = () => {
                 url="https://bscventures.co/blog/ecommerce-trends"
               />
             </div>
+
+            <RelatedArticles 
+              currentArticleId="ecommerce-trends"
+              category="E-commerce"
+            />
           </div>
         </article>
 
