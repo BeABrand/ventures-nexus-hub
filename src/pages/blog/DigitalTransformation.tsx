@@ -1,9 +1,10 @@
-import { ArrowLeft, Calendar, Clock, Share2 } from "lucide-react";
+import { ArrowLeft, Calendar, Clock } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
+import ShareButton from "@/components/ShareButton";
 
 const DigitalTransformation = () => {
   const structuredData = {
@@ -41,10 +42,10 @@ const DigitalTransformation = () => {
       <div className="min-h-screen flex flex-col">
         <Navbar />
         
-        <article className="flex-grow py-12">
-          <div className="container mx-auto px-4 max-w-4xl">
+        <article className="flex-grow">
+          <div className="container mx-auto px-4 max-w-4xl pt-8 pb-12">
             <Link to="/blog">
-              <Button variant="ghost" className="mb-6 group">
+              <Button variant="ghost" className="mb-8 group">
                 <ArrowLeft className="mr-2 w-4 h-4 group-hover:-translate-x-1 transition-transform" />
                 Back to Blog
               </Button>
@@ -129,11 +130,11 @@ const DigitalTransformation = () => {
               </p>
             </div>
 
-            <div className="mt-12 pt-8 border-t">
-              <Button variant="outline" className="group">
-                <Share2 className="mr-2 w-4 h-4" />
-                Share Article
-              </Button>
+            <div className="mt-12 pt-8 border-t flex justify-center">
+              <ShareButton 
+                title="The Complete Guide to Digital Transformation in 2025"
+                url="https://bscventures.co/blog/digital-transformation-guide"
+              />
             </div>
           </div>
         </article>
