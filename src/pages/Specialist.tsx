@@ -108,19 +108,25 @@ const Specialist = () => {
                 <p className="text-xl text-muted-foreground">
                   AI Specialist dedicated to helping businesses integrate cutting-edge artificial intelligence tools seamlessly into their systems
                 </p>
-                <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                  <Button size="lg" asChild>
-                    <a href="mailto:marionwangari001@gmail.com">
-                      <Mail className="mr-2 h-5 w-5" />
-                      Get In Touch
-                    </a>
-                  </Button>
-                  <Button size="lg" variant="outline" asChild>
-                    <a href="tel:+254748246931">
-                      <Phone className="mr-2 h-5 w-5" />
-                      Call Now
-                    </a>
-                  </Button>
+                <div className="flex flex-col gap-4 pt-4">
+                  <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3">
+                    <Button size="lg" asChild>
+                      <a href="mailto:marionwangari001@gmail.com">
+                        <Mail className="mr-2 h-5 w-5" />
+                        Get In Touch
+                      </a>
+                    </Button>
+                    <span className="text-muted-foreground">marionwangari001@gmail.com</span>
+                  </div>
+                  <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3">
+                    <Button size="lg" variant="outline" asChild>
+                      <a href="tel:+254748246931">
+                        <Phone className="mr-2 h-5 w-5" />
+                        Call Now
+                      </a>
+                    </Button>
+                    <span className="text-muted-foreground">+254 748 246 931</span>
+                  </div>
                 </div>
               </div>
               <div className="relative animate-fade-in" style={{ animationDelay: "0.2s" }}>
