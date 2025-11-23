@@ -14,6 +14,7 @@ import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfUse from "./pages/TermsOfUse";
 import Copyright from "./pages/Copyright";
 import NotFound from "./pages/NotFound";
+import Specialist from "./pages/Specialist";
 import LoadingScreen from "./components/LoadingScreen";
 
 // Lazy load blog pages for better performance
@@ -51,6 +52,7 @@ const App = () => (
             <Route path="/contact" element={<Contact />} />
             <Route path="/partnership" element={<Partnership />} />
             <Route path="/careers" element={<Careers />} />
+            <Route path="/specialist" element={<Specialist />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/digital-transformation-guide" element={<DigitalTransformation />} />
             <Route path="/blog/ai-education-revolution" element={<AIEducation />} />
